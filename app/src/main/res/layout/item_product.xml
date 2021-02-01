@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_container"
+        android:background="@drawable/bg_item_product"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/red"
+            android:text="NEW"/>
+
+        <ImageView
+            android:id="@+id/imv_product"
+            android:layout_width="125dp"
+            android:layout_height="125dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/bg_shadow"/>
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Cookie"/>
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="left"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:text="19.52"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

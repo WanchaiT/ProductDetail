@@ -2172,6 +2172,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string txt_back
 string txt_back_arrow
+string txt_detail
 string txt_products
 string txt_start_picking_your_treats
 style AlertDialog_AppCompat

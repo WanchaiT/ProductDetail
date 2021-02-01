@@ -2171,8 +2171,9 @@ int string search_menu_title 0x7f0e0051
 int string status_bar_notification_info_overflow 0x7f0e0052
 int string txt_back 0x7f0e0053
 int string txt_back_arrow 0x7f0e0054
-int string txt_products 0x7f0e0055
-int string txt_start_picking_your_treats 0x7f0e0056
+int string txt_detail 0x7f0e0055
+int string txt_products 0x7f0e0056
+int string txt_start_picking_your_treats 0x7f0e0057
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style Animation_AppCompat_Dialog 0x7f0f0002

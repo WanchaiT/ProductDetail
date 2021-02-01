@@ -55,7 +55,7 @@ class ProductDetailFragment : Fragment() {
     }
 
     private fun initToolbar() {
-        ctv_toolbar.setTextTitle(getString(R.string.txt_products))
+        ctv_toolbar.setTextTitle(getString(R.string.txt_detail))
         ctv_toolbar.visibleBackButton(true)
         ctv_toolbar?.backButtonClickListener = object : ToolbarClickListener {
             override fun onLHSClickListener(view: View) {

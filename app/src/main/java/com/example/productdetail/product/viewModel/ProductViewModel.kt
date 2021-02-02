@@ -23,7 +23,7 @@ class ProductViewModel : ViewModel() {
             }
 
             override fun onFailed(res: String) {
-                onFailed.postValue(toString())
+                onFailed.postValue(res.toString())
             }
 
             override fun onFinished(response: ArrayList<ProductDetailModel>?) {

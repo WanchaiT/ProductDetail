@@ -124,7 +124,7 @@ class ProductDetailFragment : Fragment() {
             val df = DecimalFormat("#.##")
             df.roundingMode = RoundingMode.CEILING
             tv_product_price.text = df.format(item.price ?: 0.0)
-            tv_content.text = item.content
+            tv_content.text = item.content ?: ""
         }
     }
 

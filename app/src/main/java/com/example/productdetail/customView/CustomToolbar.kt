@@ -19,6 +19,8 @@ class CustomToolbar : ConstraintLayout {
     private var mContext: Context? = null
 
 //    var backButtonClickListener: ToolbarClickListener? = null
+    var backButtonClickListener: (View) -> Unit = {_ -> }
+
 
     constructor(context: Context,  attrs: AttributeSet?) : super(context, attrs) {
         this.mContext = context
@@ -32,8 +34,6 @@ class CustomToolbar : ConstraintLayout {
             backButtonClickListener(it)
         }
     }
-
-    var backButtonClickListener: (View) -> Unit = {_ -> }
 
     fun setTextTitle(text: String): CustomToolbar {
         tv_title?.visibility = View.VISIBLE

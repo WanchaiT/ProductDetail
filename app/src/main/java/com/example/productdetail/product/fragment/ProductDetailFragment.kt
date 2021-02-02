@@ -103,7 +103,6 @@ class ProductDetailFragment : Fragment() {
             tv_product_name.text = item.title ?: ""
 
             if (!item.image.isNullOrEmpty()) {
-                imv_shadow.visibility = View.VISIBLE
                 ImageUtil.loadImage(
                         context = imv_product.context,
                         imageView = imv_product,

@@ -77,6 +77,7 @@
                     android:layout_height="5dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="16dp"
+                    android:visibility="gone"
                     android:src="@drawable/bg_shadow"/>
 
 

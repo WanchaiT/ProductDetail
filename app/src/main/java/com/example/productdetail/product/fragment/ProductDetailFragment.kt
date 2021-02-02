@@ -76,6 +76,7 @@ class ProductDetailFragment : Fragment() {
             })
             event.onFailed.observe(viewLifecycleOwner, Observer {
                 Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
+                requireActivity()?.finish()
             })
         }
     }

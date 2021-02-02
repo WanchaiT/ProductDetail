@@ -691,6 +691,26 @@ attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
 attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
+attr shimmer_auto_start
+attr shimmer_base_alpha
+attr shimmer_base_color
+attr shimmer_clip_to_children
+attr shimmer_colored
+attr shimmer_direction
+attr shimmer_dropoff
+attr shimmer_duration
+attr shimmer_fixed_height
+attr shimmer_fixed_width
+attr shimmer_height_ratio
+attr shimmer_highlight_alpha
+attr shimmer_highlight_color
+attr shimmer_intensity
+attr shimmer_repeat_count
+attr shimmer_repeat_delay
+attr shimmer_repeat_mode
+attr shimmer_shape
+attr shimmer_tilt
+attr shimmer_width_ratio
 attr showAsAction
 attr showDivider
 attr showDividerHorizontal
@@ -1060,6 +1080,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color softGray
 color softWhite
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -1493,6 +1514,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg_item_product
+drawable bg_product_skeleton
 drawable bg_shadow
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1633,6 +1655,7 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottom_to_top
 id bounce
 id buttonPanel
 id cache_measures
@@ -1746,6 +1769,7 @@ id labeled
 id largeLabel
 id layout
 id left
+id left_to_right
 id lin_back
 id lin_container
 id lin_custom_toolbar
@@ -1817,14 +1841,18 @@ id postLayout
 id product
 id progress_circular
 id progress_horizontal
+id radial
 id radio
 id ratio
 id rcv_product
 id rectangles
+id restart
+id reverse
 id reverseSawtooth
 id right
 id right_icon
 id right_side
+id right_to_left
 id rounded
 id row
 id row_reverse
@@ -1850,6 +1878,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id shimmer_product_detail
 id shortcut
 id showCustom
 id showHome
@@ -1914,6 +1943,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id top_to_bottom
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -2068,6 +2098,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout product_detail_placeholder
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2170,6 +2201,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string text_someting_went_wong
 string txt_back
 string txt_back_arrow
 string txt_detail
@@ -2949,6 +2981,7 @@ styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
+styleable ShimmerFrameLayout shimmer_auto_start shimmer_base_alpha shimmer_base_color shimmer_clip_to_children shimmer_colored shimmer_direction shimmer_dropoff shimmer_duration shimmer_fixed_height shimmer_fixed_width shimmer_height_ratio shimmer_highlight_alpha shimmer_highlight_color shimmer_intensity shimmer_repeat_count shimmer_repeat_delay shimmer_repeat_mode shimmer_shape shimmer_tilt shimmer_width_ratio
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme

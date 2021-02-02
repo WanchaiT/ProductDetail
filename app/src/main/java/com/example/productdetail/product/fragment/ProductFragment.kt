@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.google.android.flexbox.FlexDirection
 import com.example.productdetail.R
@@ -36,6 +37,7 @@ class ProductFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ProductViewModel::class.java)
+        viewModel.context = requireContext()
         initToolbar()
         observeViewModel()
         viewModel.getAllProduct()
@@ -53,6 +55,9 @@ class ProductFragment : Fragment() {
                 setVisibleProgressBar(false)
                 setVisibleLinContainer(true)
                 setRcvProduct(it)
+            })
+            event.onFailed.observe(viewLifecycleOwner, Observer {
+                Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
             })
         }
     }

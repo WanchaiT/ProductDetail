@@ -13,6 +13,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/wanchai/.g
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/f1f33b62267c75a6f99331b460a092b0/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/7234b0f152df6b18bd13a45c80f358e4/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/2e25be288265a51dc1c64ef4c35243c0/jetified-glide-4.12.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.facebook.shimmer:shimmer:0.5.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/622c621af92cc1f3bfeab01ed330efcd/jetified-shimmer-0.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android:flexbox:2.0.1] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/c4f0ce284ea795ed764e1c8c14fd9730/jetified-flexbox-2.0.1/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/7e8ff6e03fac3b93c2b0bf38c8666dd9/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/cdb6f207b4500473c7ffeec55f385efa/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -158,6 +159,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/wanchai/.gradle/cac
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/7234b0f152df6b18bd13a45c80f358e4/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/2e25be288265a51dc1c64ef4c35243c0/jetified-glide-4.12.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/2e25be288265a51dc1c64ef4c35243c0/jetified-glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.facebook.shimmer:shimmer:0.5.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/622c621af92cc1f3bfeab01ed330efcd/jetified-shimmer-0.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.shimmer:shimmer:0.5.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/622c621af92cc1f3bfeab01ed330efcd/jetified-shimmer-0.5.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android:flexbox:2.0.1] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/c4f0ce284ea795ed764e1c8c14fd9730/jetified-flexbox-2.0.1/AndroidManifest.xml:22:5-24:41
 MERGED from [com.google.android:flexbox:2.0.1] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/c4f0ce284ea795ed764e1c8c14fd9730/jetified-flexbox-2.0.1/AndroidManifest.xml:22:5-24:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/wanchai/.gradle/caches/transforms-2/files-2.1/7e8ff6e03fac3b93c2b0bf38c8666dd9/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44

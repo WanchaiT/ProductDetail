@@ -1,10 +1,11 @@
 package com.example.productdetail.product.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.productdetail.R
@@ -13,15 +14,14 @@ import com.example.productdetail.product.model.ProductDetailModel
 import com.example.productdetail.product.viewModel.ProductDetailViewModel
 import com.example.productdetail.util.ImageUtil
 import kotlinx.android.synthetic.main.fragment_product_detail.*
-import kotlinx.android.synthetic.main.fragment_product_detail.ctv_toolbar
 import java.math.RoundingMode
 import java.text.DecimalFormat
+
 
 class ProductDetailFragment : Fragment() {
 
     private var id: Int? = null
     private lateinit var viewModel: ProductDetailViewModel
-
 
     companion object {
         fun newInstance(id: Int) =
@@ -42,6 +42,9 @@ class ProductDetailFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ProductDetailViewModel::class.java)
+        viewModel.context = requireContext()
+        setVisibleCtlContainer(false)
+        setVisibleShimmer(true)
         initArgument()
         initToolbar()
         observeViewModel()
@@ -67,23 +70,28 @@ class ProductDetailFragment : Fragment() {
     fun observeViewModel() {
         viewModel.let { event ->
             event.productSelected.observe(viewLifecycleOwner, Observer {
-                setVisibleProgressBar(false)
+                setVisibleShimmer(false)
                 setVisibleCtlContainer(true)
                 setViewProductDetail(it)
+            })
+            event.onFailed.observe(viewLifecycleOwner, Observer {
+                Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
             })
         }
     }
 
-    fun setVisibleProgressBar(isShow: Boolean) {
-        progress_circular.visibility = if(isShow) {
-            View.VISIBLE
+    fun setVisibleShimmer(isShow: Boolean) {
+        if (isShow) {
+            shimmer_product_detail.startShimmer()
+            shimmer_product_detail.visibility = View.VISIBLE
         } else {
-            View.GONE
+            shimmer_product_detail.stopShimmer()
+            shimmer_product_detail.visibility = View.GONE
         }
     }
 
     fun setVisibleCtlContainer(isShow: Boolean) {
-        ctl_container.visibility = if(isShow) {
+        ctl_container.visibility = if (isShow) {
             View.VISIBLE
         } else {
             View.GONE
@@ -96,10 +104,13 @@ class ProductDetailFragment : Fragment() {
 
             if (!item.image.isNullOrEmpty()) {
                 ImageUtil.loadImage(
-                        context =imv_product.context,
+                        context = imv_product.context,
                         imageView = imv_product,
-                        path = item.image ?: ""
+                        path = item.image ?: "",
+                        goneAble = true
                 )
+            } else {
+                imv_product.visibility = View.GONE
             }
 
             tv_new.visibility = if(item.isNewProduct) {

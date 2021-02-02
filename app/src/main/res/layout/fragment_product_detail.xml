@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
     android:id="@+id/product"
     android:background="@color/softWhite"
     android:layout_width="match_parent"
@@ -15,101 +16,119 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-
-    <ProgressBar
-        android:id="@+id/progress_circular"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:progressTint="@color/red"
-        android:backgroundTint="@color/red"
-        app:layout_constraintTop_toBottomOf="@+id/ctv_toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ctl_container"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/ctv_toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-<!--        <TextView-->
-<!--            android:id="@+id/tv_pick"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/txt_start_picking_your_treats"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textStyle="bold"-->
-<!--            android:padding="8dp"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"/>-->
-
-        <LinearLayout
-            android:id="@+id/lin_product_detail"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctl_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="32dp"
-            app:layout_constraintTop_toBottomOf="@+id/tv_pick">
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-            <TextView
-                android:id="@+id/tv_new"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:textColor="@color/red"
-                android:text="NEW"/>
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_pick"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="@string/txt_start_picking_your_treats"-->
+            <!--            android:textSize="18sp"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:padding="8dp"-->
+            <!--            app:layout_constraintTop_toTopOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"/>-->
 
-            <ImageView
-                android:id="@+id/imv_product"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:layout_gravity="center" />
-
-            <TextView
-                android:id="@+id/tv_product_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_marginTop="4dp"
-                android:maxLines="2"
-                android:textSize="22sp"
-                android:ellipsize="end"
-                android:textColor="@color/black"
-                android:text="Cookie"/>
-
-            <TextView
-                android:id="@+id/tv_product_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="6dp"
-                android:layout_gravity="left"
-                android:textSize="28sp"
-                android:textColor="@color/red"
-                android:textStyle="bold"
-                android:text="19.52"/>
-
-            <TextView
-                android:id="@+id/tv_content"
+            <LinearLayout
+                android:id="@+id/lin_product_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="10"
-                android:ellipsize="end"
-                android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pick">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/red"
+                    android:text="NEW"/>
+
+                <ImageView
+                    android:id="@+id/imv_product"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="4dp"
+                    android:maxLines="2"
+                    android:textSize="22sp"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:text="Cookie"/>
+
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_gravity="left"
+                    android:textSize="28sp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:text="19.52"/>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_product_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        shimmer:duration="800"
+        app:layout_constraintTop_toBottomOf="@id/ctv_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/product_detail_placeholder" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
 
 
 

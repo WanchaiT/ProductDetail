@@ -10,4 +10,5 @@
 
     <color name="red">#E30909</color>
     <color name="softWhite">#fafafa</color>
+    <color name="softGray">#949494</color>
 </resources>

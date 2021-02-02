@@ -16,9 +16,10 @@ class ProductRepository() {
 
         call.enqueue(object : Callback<ArrayList<ProductDetailModel>> {
             override fun onResponse(call: Call<ArrayList<ProductDetailModel>>, response: Response<ArrayList<ProductDetailModel>>) {
-                if (response.isSuccessful) onCallbackListener.onFinished(response.body())
-                else {
-                    onCallbackListener.onFailed()
+                if (response.isSuccessful) {
+                    onCallbackListener.onFinished(response.body())
+                } else {
+                    onCallbackListener.onFailed(response.code().toString() + " " + response.message())
                 }
             }
 
@@ -34,10 +35,10 @@ class ProductRepository() {
 
         call.enqueue(object : Callback<ProductDetailModel> {
             override fun onResponse(call: Call<ProductDetailModel>, response: Response<ProductDetailModel>) {
-                if (response.isSuccessful) onCallbackListener.onFinished(response.body())
-                else {
+                if (response.isSuccessful) {
+                    onCallbackListener.onFinished(response.body())
+                } else {
                     onCallbackListener.onFailed(response.code().toString() + " " + response.message())
-                    onCallbackListener.onFailed()
                 }
             }
 

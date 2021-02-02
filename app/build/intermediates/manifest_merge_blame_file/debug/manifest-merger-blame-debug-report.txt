@@ -21,7 +21,7 @@
 13-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:7:22-64
 14
 15    <application
-15-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:9:5-30:19
+15-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:9:5-36:19
 16        android:allowBackup="true"
 16-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -48,27 +48,35 @@
 29            android:theme="@style/AppTheme.NoActionBar" />
 29-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:18:13-56
 30        <activity
-30-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:19:9-22:68
+30-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:19:9-28:20
 31            android:name="com.example.productdetail.product.activity.ProductActivity"
 31-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:20:13-61
 32            android:screenOrientation="portrait"
 32-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:21:13-49
-33            android:theme="@style/AppTheme.NoActionBar" />
+33            android:theme="@style/AppTheme.NoActionBar" >
 33-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:22:13-56
-34        <activity android:name="com.example.productdetail.MainActivity" >
-34-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:23:9-29:20
-34-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:23:19-47
-35            <intent-filter>
-35-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:24:13-28:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:25:17-69
-36-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:25:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:27:17-77
-38-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:27:27-74
-39            </intent-filter>
-40        </activity>
-41    </application>
-42
-43</manifest>
+34            <intent-filter>
+34-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:23:13-27:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:24:17-69
+35-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:24:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:26:17-77
+37-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:26:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity android:name="com.example.productdetail.MainActivity" >
+40-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:29:9-35:20
+40-->/Users/wanchai/ProductDetail/app/src/main/AndroidManifest.xml:29:19-47
+41
+42            <!-- <intent-filter> -->
+43            <!-- <action android:name="android.intent.action.MAIN" /> -->
+44
+45
+46            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+47            <!-- </intent-filter> -->
+48        </activity>
+49    </application>
+50
+51</manifest>

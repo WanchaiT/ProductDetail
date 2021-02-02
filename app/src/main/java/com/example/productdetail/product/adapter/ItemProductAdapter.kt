@@ -1,15 +1,17 @@
 package com.example.productdetail.product.adapter
 
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
+import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.productdetail.R
 import com.example.productdetail.product.model.ProductDetailModel
 import com.example.productdetail.util.ImageUtil
 import kotlinx.android.synthetic.main.item_product.view.*
-import java.math.RoundingMode
 import java.text.DecimalFormat
+
 
 class ItemProductAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     var itemList = ArrayList<ProductDetailModel>()

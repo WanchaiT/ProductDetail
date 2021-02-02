@@ -1773,7 +1773,6 @@ id left
 id left_to_right
 id lin_back
 id lin_container
-id lin_custom_toolbar
 id lin_product_detail
 id line1
 id line3

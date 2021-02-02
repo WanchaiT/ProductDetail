@@ -1,4 +1,4 @@
-#Tue Feb 02 08:15:10 ICT 2021
+#Tue Feb 02 10:03:24 ICT 2021
 base.0=/Users/wanchai/ProductDetail/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

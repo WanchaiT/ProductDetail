@@ -10,7 +10,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0a073ee-0153-42ea-b756-a2b2bc73106f" name="Default Changelist" comment="" />
+    <list default="true" id="c0a073ee-0153-42ea-b756-a2b2bc73106f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product_detail.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,10 +226,10 @@
     </state>
     <state x="680" y="307" width="975" height="490" key="find.popup/303.1105.1440.875/41.25.1879.1055@41.25.1879.1055" timestamp="1612181661308" />
     <state x="680" y="307" width="975" height="490" key="find.popup/41.25.1879.1055@41.25.1879.1055" timestamp="1612204923379" />
-    <state x="652" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1612227822283">
+    <state x="652" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1612233568595">
       <screen x="41" y="25" width="1879" height="1055" />
     </state>
-    <state x="652" y="259" width="670" height="676" key="search.everywhere.popup/41.25.1879.1055@41.25.1879.1055" timestamp="1612227822283" />
+    <state x="652" y="259" width="670" height="676" key="search.everywhere.popup/41.25.1879.1055@41.25.1879.1055" timestamp="1612233568595" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

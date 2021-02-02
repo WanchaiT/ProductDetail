@@ -114,8 +114,10 @@ class ProductDetailFragment : Fragment() {
             }
 
             tv_new.visibility = if(item.isNewProduct) {
+                imv_shadow.visibility = View.VISIBLE
                 View.VISIBLE
             } else {
+                imv_shadow.visibility = View.GONE
                 View.INVISIBLE
             }
 

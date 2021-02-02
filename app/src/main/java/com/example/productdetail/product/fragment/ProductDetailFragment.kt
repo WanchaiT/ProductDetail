@@ -103,21 +103,22 @@ class ProductDetailFragment : Fragment() {
             tv_product_name.text = item.title ?: ""
 
             if (!item.image.isNullOrEmpty()) {
+                imv_shadow.visibility = View.VISIBLE
                 ImageUtil.loadImage(
                         context = imv_product.context,
                         imageView = imv_product,
                         path = item.image ?: "",
-                        goneAble = true
+                        goneAble = true,
+                        imageShadowView = imv_shadow
                 )
             } else {
                 imv_product.visibility = View.GONE
+                imv_shadow.visibility = View.GONE
             }
 
             tv_new.visibility = if(item.isNewProduct) {
-                imv_shadow.visibility = View.VISIBLE
                 View.VISIBLE
             } else {
-                imv_shadow.visibility = View.GONE
                 View.INVISIBLE
             }
 

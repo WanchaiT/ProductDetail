@@ -65,7 +65,6 @@ class ItemProductAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 View.INVISIBLE
             }
             val df = DecimalFormat("#.##")
-            df.roundingMode = RoundingMode.CEILING
             itemView.tv_product_price.text = df.format(item.price ?: 0.0)
         }
     }

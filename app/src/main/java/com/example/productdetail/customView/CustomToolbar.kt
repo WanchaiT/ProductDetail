@@ -18,7 +18,7 @@ class CustomToolbar : ConstraintLayout {
 
     private var mContext: Context? = null
 
-    var backButtonClickListener: ToolbarClickListener? = null
+//    var backButtonClickListener: ToolbarClickListener? = null
 
     constructor(context: Context,  attrs: AttributeSet?) : super(context, attrs) {
         this.mContext = context
@@ -29,9 +29,11 @@ class CustomToolbar : ConstraintLayout {
         val inflater = mContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as? LayoutInflater
         val view = inflater?.inflate(R.layout.custom_toolbar, this)
         lin_back?.setOnClickListener {
-            backButtonClickListener?.onLHSClickListener(it)
+            backButtonClickListener(it)
         }
     }
+
+    var backButtonClickListener: (View) -> Unit = {_ -> }
 
     fun setTextTitle(text: String): CustomToolbar {
         tv_title?.visibility = View.VISIBLE
